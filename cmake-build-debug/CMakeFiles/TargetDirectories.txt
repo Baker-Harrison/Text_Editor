@@ -1,0 +1,3 @@
+C:/Users/thehe/CLionProjects/CPP/Text-Editor/cmake-build-debug/CMakeFiles/Text_Editor.dir
+C:/Users/thehe/CLionProjects/CPP/Text-Editor/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/thehe/CLionProjects/CPP/Text-Editor/cmake-build-debug/CMakeFiles/rebuild_cache.dir
