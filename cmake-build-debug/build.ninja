@@ -55,11 +55,29 @@ build CMakeFiles/Text_Editor.dir/main.cpp.obj: CXX_COMPILER__Text_Editor_unscann
   OBJECT_DIR = CMakeFiles\Text_Editor.dir
   OBJECT_FILE_DIR = CMakeFiles\Text_Editor.dir
 
-build CMakeFiles/Text_Editor.dir/File.cpp.obj: CXX_COMPILER__Text_Editor_unscanned_Debug C$:/Users/thehe/CLionProjects/CPP/Text-Editor/File.cpp || cmake_object_order_depends_target_Text_Editor
-  DEP_FILE = CMakeFiles\Text_Editor.dir\File.cpp.obj.d
+build CMakeFiles/Text_Editor.dir/src/File.cpp.obj: CXX_COMPILER__Text_Editor_unscanned_Debug C$:/Users/thehe/CLionProjects/CPP/Text-Editor/src/File.cpp || cmake_object_order_depends_target_Text_Editor
+  DEP_FILE = CMakeFiles\Text_Editor.dir\src\File.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\Text_Editor.dir
-  OBJECT_FILE_DIR = CMakeFiles\Text_Editor.dir
+  OBJECT_FILE_DIR = CMakeFiles\Text_Editor.dir\src
+
+build CMakeFiles/Text_Editor.dir/src/Date.cpp.obj: CXX_COMPILER__Text_Editor_unscanned_Debug C$:/Users/thehe/CLionProjects/CPP/Text-Editor/src/Date.cpp || cmake_object_order_depends_target_Text_Editor
+  DEP_FILE = CMakeFiles\Text_Editor.dir\src\Date.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Text_Editor.dir
+  OBJECT_FILE_DIR = CMakeFiles\Text_Editor.dir\src
+
+build CMakeFiles/Text_Editor.dir/src/FileSystem.cpp.obj: CXX_COMPILER__Text_Editor_unscanned_Debug C$:/Users/thehe/CLionProjects/CPP/Text-Editor/src/FileSystem.cpp || cmake_object_order_depends_target_Text_Editor
+  DEP_FILE = CMakeFiles\Text_Editor.dir\src\FileSystem.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Text_Editor.dir
+  OBJECT_FILE_DIR = CMakeFiles\Text_Editor.dir\src
+
+build CMakeFiles/Text_Editor.dir/src/UI.cpp.obj: CXX_COMPILER__Text_Editor_unscanned_Debug C$:/Users/thehe/CLionProjects/CPP/Text-Editor/src/UI.cpp || cmake_object_order_depends_target_Text_Editor
+  DEP_FILE = CMakeFiles\Text_Editor.dir\src\UI.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Text_Editor.dir
+  OBJECT_FILE_DIR = CMakeFiles\Text_Editor.dir\src
 
 
 # =============================================================================
@@ -69,7 +87,7 @@ build CMakeFiles/Text_Editor.dir/File.cpp.obj: CXX_COMPILER__Text_Editor_unscann
 #############################################
 # Link the executable Text_Editor.exe
 
-build Text_Editor.exe: CXX_EXECUTABLE_LINKER__Text_Editor_Debug CMakeFiles/Text_Editor.dir/main.cpp.obj CMakeFiles/Text_Editor.dir/File.cpp.obj
+build Text_Editor.exe: CXX_EXECUTABLE_LINKER__Text_Editor_Debug CMakeFiles/Text_Editor.dir/main.cpp.obj CMakeFiles/Text_Editor.dir/src/File.cpp.obj CMakeFiles/Text_Editor.dir/src/Date.cpp.obj CMakeFiles/Text_Editor.dir/src/FileSystem.cpp.obj CMakeFiles/Text_Editor.dir/src/UI.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Text_Editor.dir
