@@ -38,13 +38,21 @@ int FileSystem::findFileIndexByName(std::string fileName) {
     return index;
 }
 
-void FileSystem::displayFiles() {
+
+
+std::string FileSystem::getFilesFormatted() {
+
+    std::string formattedFileList = "";
+
     int counter = 1;
     for (File file : files)
     {
-        std::cout << "File " << counter++ << ":" << file.getFileName() << std:: endl;
+        formattedFileList += file.getMetaData() + "\n";
     }
+
+    return formattedFileList;
 }
+
 
 std::string FileSystem::readFile(std::string fileName) {
     return files[findFileIndexByName(fileName)].getText();
@@ -52,4 +60,15 @@ std::string FileSystem::readFile(std::string fileName) {
 
 void FileSystem::appendTextToFileByName(std::string fileName, std::string text) {
     files[findFileIndexByName(fileName)].appendText(text);
+}
+
+bool FileSystem::doesFileExist(std::string fileName) {
+    for (File &file : files)
+    {
+        if (file.getFileName() == fileName)
+        {
+            return true;
+        }
+    }
+    return false;
 }

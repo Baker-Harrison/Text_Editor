@@ -14,12 +14,12 @@ private:
     static std::vector<File> files;
 
 public:
-    void initializeFiles();
+    static bool doesFileExist(std::string fileName);
     static void addFile(File &file);
     static void deleteFile(std::string deletedFileName);
     static void renameFile(std::string origingalFileName,std::string newFileName);
     static int findFileIndexByName(std::string fileName);
-    static void displayFiles();
+    static std::string getFilesFormatted();
     static std::string readFile(std::string fileName);
     static void appendTextToFileByName(std::string fileName, std::string text);
 };

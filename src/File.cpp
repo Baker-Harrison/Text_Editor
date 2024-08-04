@@ -7,6 +7,7 @@
 File::File(std::string name)
 {
     this->name = name;
+    this->dateCreated = Date("2005", "July", "1", "Monday");
 }
 
 
@@ -34,5 +35,5 @@ void File::appendText(std::string newTextContent) {
 }
 
 std::string File::getMetaData() {
-    return "File Name: " + name + "\n" + "Date Created: " + dateCreated.getDateFormatted();
+    return "File Name: " + name + ", " + "Date Created: " + dateCreated.getDateFormatted();
 }
